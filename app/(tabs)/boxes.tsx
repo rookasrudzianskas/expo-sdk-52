@@ -9,14 +9,23 @@ const Boxes = () => {
         width: 100,
         height: 100,
         backgroundColor: 'red',
-        boxShadow: '10px 10px 10px gray, -10px -10px 10px lime'
-        // boxShadow: {
-        //   offsetX: 5,
-        //   offsetY: 5,
-        //   blurRadius: 10,
-        //   spreadDistance: 5,
-        //   color: 'green',
-        // },
+        // boxShadow: '10px 10px 10px gray, -10px -10px 10px lime'
+        boxShadow: [
+          {
+            offsetX: 5,
+            offsetY: 5,
+            blurRadius: 10,
+            spreadDistance: 5,
+            color: 'red',
+          },
+          {
+          offsetX: 5,
+          offsetY: 5,
+          blurRadius: 10,
+          spreadDistance: 5,
+          color: 'green',
+        }
+        ],
       }}/>
     </View>
   );
