@@ -21,22 +21,22 @@ const Filters = () => {
         source={{uri: image }}
         style={{
           width: '100%',
-          aspectRatio: image?.width ? image?.height,
+          aspectRatio: image?.width / image?.height,
           backgroundColor: 'lightgray',
           filter: 'sepia(100%)',
       }}
         resizeMode="contain"
       />
 
-      <Image
-        source={{uri: 'https://picsum.photos/400'}}
-        style={{
-          width: 200,
-          height: 200,
-          filter: 'opacity(0.5) brightness(120%) hue-rotate(90deg) drop-shadow(16px 16px 20px red)',
-        }}
-        resizeMode="contain"
-      />
+      {/*<Image*/}
+      {/*  source={{uri: 'https://picsum.photos/400'}}*/}
+      {/*  style={{*/}
+      {/*    width: 200,*/}
+      {/*    height: 200,*/}
+      {/*    filter: 'opacity(0.5) brightness(120%) hue-rotate(90deg) drop-shadow(16px 16px 20px red)',*/}
+      {/*  }}*/}
+      {/*  resizeMode="contain"*/}
+      {/*/>*/}
     </View>
   );
 };
