@@ -27,6 +27,8 @@ export default function RootLayout() {
     return null;
   }
 
+  console.log("ROKAS")
+
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
