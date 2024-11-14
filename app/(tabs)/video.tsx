@@ -16,7 +16,14 @@ const Video = () => {
   });
 
   return (
-    <VideoView style={styles.video} player={player} allowsFullscreen allowsPictureInPicture />
+    <VideoView
+      style={styles.video}
+      player={player}
+      allowsFullscreen
+      startsPictureInPictureAutomatically={true}
+      allowsPictureInPicture
+      nativeControls={true}
+    />
   );
 };
 
